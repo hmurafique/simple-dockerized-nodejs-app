@@ -6,7 +6,7 @@ This project demonstrates the fundamental steps of dockerizing a simple Node.js 
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/your_username/dockerized-nodejs-express.git
+   git clone https://github.com/Emminex23/simple-dockerized-nodejs-app.git
    ```
 
 2. **Install dependencies:**
