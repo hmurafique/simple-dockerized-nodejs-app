@@ -11,7 +11,7 @@ This project demonstrates the fundamental steps of dockerizing a simple Node.js 
 
 2. **Install dependencies:**
    ```bash
-   cd dockerized-nodejs-express
+   cd simple-dockerized-nodejs-app
    npm install 
    ```
 
