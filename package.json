@@ -2,11 +2,13 @@
   "name": "simple-dockerized-nodejs-app",
   "version": "1.0.0",
   "description": "This project demonstrates the fundamental steps of dockerizing a simple Node.js Express application. It's perfect for those looking to understand the workflow of packaging and running applications within Docker containers.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Emmanuel Oyibo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
 }
