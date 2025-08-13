@@ -1,40 +1,27 @@
-# Dockerized Node.js Express Application
+# Node.js Docker AWS Deployment
 
-This project demonstrates the fundamental steps of dockerizing a simple Node.js Express application. It's perfect for those looking to understand the workflow of packaging and running applications within Docker containers.
+This is a simple Node.js and Express application running in a Docker container. The project has been created exclusively for **deployment practice**.
 
-## Setup 
+## 📁 Project Directory Structure
+simple-dockerized-nodejs-app/
+├── server.js
+├── package.json
+├── Dockerfile
+└── README.md
 
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/Emminex23/simple-dockerized-nodejs-app.git
-   ```
-
-2. **Install dependencies:**
-   ```bash
+## 📦 How to Use (Locally or EC2:
+```bash
+#1. Clone the Repository:
+   git clone https://github.com/<your-username>/<your-repo>.git
    cd simple-dockerized-nodejs-app
-   npm install 
-   ```
 
-## Dockerizing the Application
+#2. Build Docker Image:
+   docker build -t node-app .
 
-1. **Dockerfile:** The `Dockerfile` contains the instructions for building the Docker image.  Refer to the `Dockerfile` for detailed explanations of each step.
+#3. Run Docker Container:
+   docker run -d --name node-app-service -p 3000:3000 node-app
 
-2. **Build the image:**
-   ```bash
-   docker build -t nodejs-express-app .
-   ```
-
-3. **Run the container:**
-   ```bash
-   docker run -p 3000:3000 -d nodejs-express-app
-   ```
-
-## Accessing the Application
-
-Open your web browser and go to  http://localhost:3000/. You should see the message "Hello from Express!".
-
-## Project Structure
-
-* `server.js`:  The Node.js Express server code.
-* `package.json`: Contains project dependencies.
-* `Dockerfile`:  Instructions for creating the Docker image.
+#4. Open in Browser or Curl:
+   curl http://localhost:3000
+   or
+   open in browser: http://<your-ec2-ip>:3000
