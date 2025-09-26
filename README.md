@@ -11,7 +11,7 @@ simple-dockerized-nodejs-app/
 └── README.md
 ```
 
-## 📦 How to Use (Locally or EC2:
+## 📦 How to Use (Locally or EC2):
 ```bash
 #1. Clone the Repository:
    git clone https://github.com/<your-username>/<your-repo>.git
