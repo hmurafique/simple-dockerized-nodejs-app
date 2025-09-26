@@ -3,11 +3,13 @@
 This is a simple Node.js and Express application running in a Docker container. The project has been created exclusively for **deployment practice**.
 
 ## 📁 Project Directory Structure
+```bash
 simple-dockerized-nodejs-app/
 ├── server.js
 ├── package.json
 ├── Dockerfile
 └── README.md
+```
 
 ## 📦 How to Use (Locally or EC2:
 ```bash
